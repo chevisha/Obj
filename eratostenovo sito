@@ -1,11 +1,26 @@
-import math
-n = 100
-obelzen = {}
-for i in range(2, int(math.sqrt(n))):
-    if not obelzen.get(i):
-        for x in range(i * i, n, i):
-            obelzen[x] = True
+class erat:
+    def __init__(self):
+        self.aa = 1
+        self.primes = self.sito(self.aa)
+    def Get(self):
+        return self.primes 
+        return prime_list     
+    def Next(self):
+        self.aa +=1
+        return self.sito(self.aa)       
 
-for i in range(2, n):
-    if not obelzen.get(i):
-        print(i)
+    def sito(self,x):
+        prime_list = []
+        n = self.aa
+        for i in range(2, n+1):
+            if i not in prime_list:
+                print (i)
+                for j in range(i*i, n+1, i):
+                    prime_list.append(j)    
+
+yyy=50;
+o = erat()
+for i in range(yyy):
+    print(".....")
+    print(t)
+o.Next()
